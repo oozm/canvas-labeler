@@ -1,10 +1,14 @@
 {
-  "name": "canvas-label",
-  "version": "1.0.0",
+  "name": "canvas-labeler",
+  "version": "1.0.6",
   "description": "一个用于图片标注的javascript库，基于canvas-select插件，简单轻量，支持矩形、旋转矩形、多边形、点、折线、圆形。",
-  "main": "index.ts",
+  "main": "lib/canvas-labeler.min.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "/lib"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config webpack.config.js"
   },
   "keywords": [
     "canvas",
@@ -30,5 +34,13 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/oozm/canvas-label.git"
+  },
+  "devDependencies": {
+    "terser-webpack-plugin": "^5.3.10",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.5",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
   }
 }
