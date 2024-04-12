@@ -126,7 +126,7 @@ export default class CanvasLabeler extends EventBus {
    * @param el Valid CSS selector string, or DOM
    * @param src image src
    */
-  constructor(el: HTMLCanvasElement | string, src?: string, isCount?: boolean) {
+  constructor(el: HTMLCanvasElement | string, src?: string) {
     super();
     this.handleLoad = this.handleLoad.bind(this);
     this.handleContextmenu = this.handleContextmenu.bind(this);
