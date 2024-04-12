@@ -44,7 +44,7 @@
 支持 UMD 模块规范
 
 ```bash
-npm install canvas-select --save
+npm install canvas-labeler --save
 ```
 
 ```html
@@ -55,7 +55,8 @@ npm install canvas-select --save
 // 创建实例（重要：一定要等到挂载节点就绪）
 // 第一个参数为挂载节点 可以是css选择器或者HTMLCanvasElement
 // 第二个参数为图片链接
-const instance = new CanvasSelect('.container', '/one.jpg');
+import CanvasLabeler from 'canvas-labeler';
+const instance = new CanvasLabeler('.container', '/one.jpg');
 // or
 // const instance = new CanvasSelect('.container');
 // instance.setImage('/one.jpg');
