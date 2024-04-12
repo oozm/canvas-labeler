@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES5" /* 编译后的 JavaScript 版本 */,
+    "declaration": true,
+    "lib": ["es2016", "DOM"],
+    "module": "es6",
+    "allowJs": true,
+    "strict": true /* 启用所有严格类型检查选项 */,
+    "esModuleInterop": true /* 启用默认导入导出的 interop */,
+    "outDir": "./lib" /* 输出目录 */,
+    "sourceMap": true /* 生成 source map 文件 */,
+    "noImplicitAny": true
+  },
+  "include": ["src/**/*.ts"] /* 编译的文件 */,
+  "exclude": ["node_modules"] /* 排除的文件/文件夹 */
+}
